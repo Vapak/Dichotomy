@@ -24,7 +24,6 @@ namespace Dichotomy
             MainForm mf = new MainForm();
             Class1 math = new Class1();
 
-
             z1 = zedGraphControl1;
             z1.IsShowPointValues = true;
             z1.GraphPane.Title = String.Format(format: "График функции " + Data.formula.ToString());

@@ -15,26 +15,14 @@ namespace Dichotomy
         public void CalculateIter(string atb, string btb, string etb, string f)
         {
             parser.RequireParentheses = true;
-
             parser.ImplicitMultiplication = true;
 
             double a = 0;
-
             double b = 0;
-
             double e = 1;
-
             double c = 0;
 
-            //a = -10;
-
-            //b = 10;
-
-            //e = 0.001;
-
-            //f = "x*2^x-1";
-
-            if (atb == "-") a = -2140000000;
+            if (atb == "-") a = double.MinValue;
             else try
                 {
                     a = Convert.ToDouble(atb);
@@ -44,7 +32,7 @@ namespace Dichotomy
                     Console.WriteLine(ex.Message);
                 }
 
-            if (btb == "-") b = 2140000000;
+            if (btb == "-") b = double.MaxValue;
             else
                 try
                 {
@@ -85,9 +73,14 @@ namespace Dichotomy
                     }
                 }
                 Data.ans = c;
+                e *= 0.1;
+                Data.ans = Data.ans - (Data.ans % e);
             }
             else if (func(a) == 0) Data.ans = a;
+
             else if (func(b) == 0) Data.ans = b;
+
+            else Data.ans = 65.9;
         }
 
         public double func(double x)

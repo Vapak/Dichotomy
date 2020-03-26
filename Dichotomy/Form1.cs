@@ -29,24 +29,21 @@ namespace Dichotomy
             {
                 Data.formula = fx_TB.Text;
                 clas.CalculateIter(a_TB.Text, b_TB.Text, e_TB.Text, Data.formula);
-                MessageBox.Show(Data.ans.ToString());
+                if (Data.ans == 65.9) { MessageBox.Show("Невозможно найти корень"); }
+                else
+                { MessageBox.Show("x = " + Data.ans.ToString()); }
             }
             catch
             {
                 MessageBox.Show("Данные заданы неверно!");
             }
-            
+
         }
 
         private void go_Click(object sender, EventArgs e)
         {
             graph.Enabled = true;
             Cout();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void graph_Click(object sender, EventArgs e)

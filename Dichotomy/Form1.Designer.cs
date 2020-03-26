@@ -66,7 +66,7 @@
             this.fx_TB.Name = "fx_TB";
             this.fx_TB.Size = new System.Drawing.Size(323, 27);
             this.fx_TB.TabIndex = 3;
-            this.fx_TB.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.fx_TB.Text = "x*2^x-1";
             // 
             // label1
             // 
@@ -84,7 +84,7 @@
             this.a_TB.Name = "a_TB";
             this.a_TB.Size = new System.Drawing.Size(79, 27);
             this.a_TB.TabIndex = 6;
-            this.a_TB.Text = "-";
+            this.a_TB.Text = "-10";
             // 
             // b_TB
             // 
@@ -92,7 +92,7 @@
             this.b_TB.Name = "b_TB";
             this.b_TB.Size = new System.Drawing.Size(79, 27);
             this.b_TB.TabIndex = 7;
-            this.b_TB.Text = "-";
+            this.b_TB.Text = "10";
             // 
             // e_TB
             // 
@@ -100,7 +100,7 @@
             this.e_TB.Name = "e_TB";
             this.e_TB.Size = new System.Drawing.Size(79, 27);
             this.e_TB.TabIndex = 8;
-            this.e_TB.Text = "-";
+            this.e_TB.Text = "0,001";
             // 
             // a_label
             // 

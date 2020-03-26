@@ -11,5 +11,7 @@ namespace Dichotomy
         public static double ans { get; set; }
 
         public static string formula { get; set; }
+
+        public static double e { get; set; }
     }
 }
